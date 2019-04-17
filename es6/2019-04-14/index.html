@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <script>
+    //     var abc = "lwowj"
+    //    for(var i = 0;i<abc.length;i++) {
+    //        var a = abc.substr(i,abc.length)
+    //        for(var j = abc.length;j <= 0;j--) {
+    //           a.substr(0,j);
+    //             console.log(a)
+    //        }
+    //    }
+
+
+    // aswowvbbvlevela
+
+    // wow
+    // woow
+
+
+    // var names = ['Jhon', 'James', 'David', 'Ali'];
+    // for(var i = 0; i < names.length; i++){
+
+    // }
+
+    // for(let v of names){
+        
+    // }
+
+
+    // (function(){
+
+        
+    // })()
+
+    // var fn = (function(){
+
+    // })
+    // fn()
+
+
+    // function fn1(){
+    //     return function(){
+    //         return 1;
+    //     }
+    // }
+
+    // (1+1)*3
+
+    // (function(){
+    //     var a = 2;    
+    //     console.log(a)
+    // })()
+
+    // (function(){
+    //     var a = "Pakistan";    
+    //     console.log(a)
+    // })()
+
+    // var ab = (function(n){
+    //     var a = 2*n;    
+    //     console.log(a)
+    //     return a
+    // })(2)
+
+    // function fn (n) {
+    //     var a = 2*n;    
+    //     console.log(a)
+    //     return a
+    // }
+    // var ab = fn(2)
+
+
+    // var fn1 = x => x*3;
+    // fn1(8)
+
+    // var fn2 = () => 1;
+
+    // var fn3 = (x,b) => x*b*3;
+
+    // var fn4 = (x,b) => {
+    //     return x*b*3
+    // }
+
+
+    // var r1 = (function(b){
+    //     var a = 2+b;    
+    //     console.log(a)
+    // })(3+3)*3
+
+    // console.log(r1) //24, 20, 8, undefined, 
+
+
+    // r1 = x*3
+
+    // x = 2 + b
+
+    // x = 2 + (3+3)
+
+    // x = 2 + 6
+
+    // x = 8
+
+    // r1 = undefined * 3
+
+    // r1 = NaN
+
+    // var r2 = (function(b){
+    //     var a = 2+b;    
+    //     return a
+    // })(3+3)*(3+(function(b){
+    //     var a = 2+b;    
+    //     return a
+    // })(3+3))
+
+    // console.log(r2)
+
+    // function fn5 () {
+    //     var a = 1;
+    //     return function(){
+    //         return 5
+    //     }
+    // }
+
+    // var r5 = fn5()
+    // var r6 = r5()
+
+
+    // function adder (a, b) {
+    //     return a+b
+    // }
+    // var r7 = adder(3, 2)
+
+    // adder(4, 2)
+    // adder(5, 2)
+    // adder(6, 2)
+    // adder(7, 3)
+    // adder(8, 3)
+    // adder(9, 3)
+    // adder(10, 3)
+    // adder(11, 3)
+
+    function adder (b) {
+        return function(a){
+            return a + b
+        }
+    }
+
+    var addWith2 = adder(2)
+    var addWith3 = adder(3)
+    console.log(addWith2(5))
+    console.log(addWith3(5))
+    console.log(addWith2(10))
+    console.log(addWith3(10))
+    console.log(addWith2(5))
+    console.log(addWith2(50))
+    console.log(addWith3(50))
+
+    //7,8,12,13,7,52,53
+
+
+    for(var i = 0; i <= 10; i++){
+        console.log(i)
+    }
+
+    for(var i = 0; i <= 10; i++){
+        console.log(i*2)
+    }
+
+    for(var i = 0; i <= 10; i++){
+        if(i%2 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 0; i <= 10; i++){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 0; i <= 10; i+=1){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 0; i <= 10; i*=1){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 1; i <= 10; i*=1){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 1; i <= 10; i+=2){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 0; i <= 10; i+=2){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 1; i <= 10; i*=2){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 1; i <= 10; i*=3){
+        if(i%3 == 0){
+            console.log(i)
+        }
+    }
+
+    for(var i = 1; i <= 10; i++){
+        if(i%2 == 0){
+            console.log(i)
+            i=i*2
+        }
+    }
+
+    </script>
+</body>
+</html>
