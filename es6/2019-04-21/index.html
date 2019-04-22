@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+        // this is level paragrapah 
+
+        function fn1(a, b) {
+            // console.log(a,b)
+            return a + b
+        }
+
+        var rs1 = fn1(1, 2, 3)
+
+
+        // function sum(a,b){
+        //     console.log(arguments)
+        //     return a + b
+        // }
+
+        // sum(1,2)
+        // sum(1,2,3)
+        // sum(1,2,3,4)
+
+        // function sum1(...paramater){
+        //     console.log(paramater)
+        //     // return paramater[0] + paramater[1]
+        //     var a = 0;
+        //     for(var i = 0; i< paramater.length; i++){
+        //         a+=paramater[i]
+        //     }
+        //     return a
+        // }
+
+        // console.log(sum1(1,2))
+        // console.log(sum1(1,2,3))
+        // console.log(sum1(1,2,3,4))
+
+
+        // function calc(op, ...paramater){
+
+        // }
+
+        // calc("+", 2 , 3)
+        // calc("+", 2 , 3, 4)
+        // calc("-", 2 , 3, 5)
+        // calc("*", 2 , 3, 6, 7)
+
+
+        // function calc2(a, b = 0, c = 0){
+        //     console.log(a,b,c)
+        //     // return a + b
+        // }
+
+        // calc2(1)
+        // calc2(1,2)
+        // calc2(1,2,3)
+
+        // calc2(2,undefined,5)
+
+
+        // function* rainbow() {
+        //     yield 'red';
+        //     yield 'orange';
+        //     yield 'yellow';
+        //     yield 'green';
+        //     yield 'blue';
+        //     yield 'indigo';
+        //     yield 'violet';
+        //     return 'Pakistan'
+        // }
+
+        // var colors = rainbow()
+        // // console.log(colors)
+        // // console.log(colors.next())
+        // // console.log(colors.next())
+
+        // // for (let color of rainbow()) {
+        // //     console.log(color);
+        // // }
+
+        // function* question() {
+        //     let name = yield 'name';
+        //     console.log(name)
+
+        //     let myClass = yield 'class';
+        //     console.log(myClass)
+
+
+
+        //     return name + " is in class "+myClass
+        // }
+
+        // var que = question()
+        // console.log(que.next())
+        // console.log(que.next('Ali'))
+        // console.log(que.next('X'))
+
+
+
+        // var str = "This is Paragraph"+
+        //         +"abcd"+
+        //         +"tgis is";
+
+        // var str2 = `This is Paragraph
+        //         abcd${str}
+        //         tgis is`;
+
+        // var a = 1
+        // var b = 2
+
+        // var obj = {
+        //     a:1,
+        //     b:2
+        // }
+
+        // var obj1 = {
+        //     a : a,
+        //     b : b
+        // }
+
+        // var obj2 = {
+        //     a,
+        //     b
+        // }
+        // console.log(obj2)
+
+        var arr = [1,2,3,4,5]
+
+        for(var i = 0; i < arr.length; i++){
+            console.log(arr[i])
+        }
+
+        function loop(i, arr){
+            if(i < arr.length){
+                // loop continue
+                console.log(arr[i])
+                i++
+
+                return loop(i,arr)
+
+            }
+            else {
+                // loop break
+                return
+            }
+        }
+        loop(0, arr)
+
+        function calc3(arr){
+            if(!arr[0]){
+                return
+            }else {}
+            if(!arr[1]){
+                return
+            }else {}
+            if(!arr[2]){
+                return
+            }else {}
+            if(!arr[3]){
+                return
+            }else {}
+            if(!arr[4]){
+                return
+            }else {}
+        }
+        // calc3(arr)
+
+        function calc4(arr){
+            var i = 0;
+            if(arr.length >= i){
+                return
+            }else {i++}
+            if(arr.length >= i){
+                return
+            }else {i++}
+            if(arr.length >= i){
+                return
+            }else {i++}
+            if(arr.length >= i){
+                return
+            }else {i++}
+            if(arr.length >= i){
+                return
+            }else {i++}
+        }
+
+        
+        5*4*3*2*1
+        6*5*4*3*2*1
+
+        result = n*(n-1)
+
+        n=5
+        r = 1;
+        r = n*(n-1)
+        r = 5*(5-1)
+        r = 20*(4-1)
+        r = 60*(3-1)
+        r = 120*(2-1)
+
+        var arr1= [1,2,3,44,0,5,6]
+
+        function search(a,b){
+            // only one variable allow
+
+            arr
+            var flag
+            i
+
+            // return only one value
+        }
+
+        search(1,44) // both found
+        search(1,8) // 1 found
+        search(15,6) // 6 found
+        search(15,33) //not found
+
+
+
+    </script>
+</body>
+
+</html>
