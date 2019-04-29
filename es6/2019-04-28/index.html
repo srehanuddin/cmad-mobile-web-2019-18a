@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+
+        //    var user = {
+        //         name : "Ali",
+        //         calc : function(){
+
+        //         }
+        //    }
+
+        //    var userName = user.name
+        //    var user2 = user
+
+        //    user.name = "Rehan"
+
+        //    console.log(user.name)
+        //    console.log(userName)
+
+        //    console.log(user2.name)
+
+        //    var user3 = Object.assign(user, {})
+
+        //    user3.name = user.name
+
+        //    var user4 = {
+        //         name : "Ali",
+        //         lastName : "David",
+        //         calc : function(){
+
+        //         }
+        //    }
+
+        //    var name = user4.name
+
+        //    var {lastName,name, name1 } = user4
+        //    console.log(lastName)
+
+        //    var n = 1
+        //    var m = 2
+        //    var user5 = {
+        //         n,
+        //         m,
+        //         a : 10,
+        //    }
+
+        //    var user6 = {
+        //         name : "Ali",
+        //         lastName : "David",
+        //         calc(){
+
+        //         }
+        //    }
+        //    user6.calc()
+
+
+        // var arr = [1,2,3,4,5,6]
+        // // stack
+
+
+        // var que = new Que()
+        // que.enq(1)
+        // que.enq(2)
+        // que.enq(3)
+
+        // var a = que.dq() //1
+        // var b = que.dq() //2
+
+        // var stack = new Stack()
+        // stack.push(1)
+        // stack.push(2)
+        // stack.push(3)
+
+        // var a = stack.pop() //3
+        // var b = stack.pop() //2
+
+
+
+        // var arr1 = [1,2,3,4,5,6]
+        // var arr2 = []
+        // for(var i = 0; i < arr1.length; i++){
+        //     arr2.push(arr1[i]*2)
+        // }
+
+        // var arr1 = [1,2,3,4,5,6]
+        // for(var i = 0; i < arr1.length; i++){
+        //     // arr1[i] = arr1[i]*2
+        //     arr1[i] = 1
+        // }
+
+        // var arr3 = [1,2,3,4,5,6]
+        // arr3 = arr3.map(x => x*2);
+
+        // var arr3 = [1,2,3,4,5,6]
+        // var arr4 = arr3.map(function(item){
+        //     return item*2
+        // })
+        // console.log(arr3)
+        // console.log(arr4)
+
+
+
+
+
+
+        var arr3 = [1, 2, 3, 4, 5, 6]
+        var arr4 = arr3.map(function (item) {
+            if (item % 2 == 0) {
+                return item * 2
+            }
+            else {
+                return item * 3
+            }
+        })
+        // console.log(arr3)
+        // console.log(arr4)
+
+
+
+
+
+        var arr3 = [1, 2, 3, 4, 5, 6]
+        var arr4 = arr3.map(function (item) {
+            if (item > 3) {
+                return item
+            }
+        })
+        console.log(arr4)
+
+
+
+        var arr3 = [1, 2, 3, 4, 5, 6]
+        var arr4 = arr3.filter(function (item) {
+            if (item > 3) {
+                return item
+            }
+        })
+        console.log(arr4)
+
+        var arr3 = [1, 2, 3, 4, 5, 6]
+        var arr4 = arr3.filter(item => item > 3)
+        console.log(arr4)
+
+
+        var arr3 = [1, 2, 3, 4, 5, 6]
+        var arr4 = arr3.reduce(item1,item2 => item1+item2)
+        console.log(arr4)
+
+
+
+
+
+        var arr3 = [1,2,3,4,5,6]
+        var arr4 = arr3.map(function(item){
+            return item*2
+        })
+        console.log(arr3)
+        console.log(arr4)
+
+
+        var newArray = arr3.multiplyByTwo()
+
+
+
+
+       //splice, slice, push ....
+
+
+
+
+    </script>
+</body>
+
+</html>
