@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+
+        // Class code
+        // https://github.com/srehanuddin/cmad-mobile-web-2019-18a
+
+        // JavaScript hoisting
+        // https://www.w3schools.com/js/js_hoisting.asp
+        // https://scotch.io/tutorials/understanding-hoisting-in-javascript
+        // https://codeburst.io/javascript-what-is-hoisting-dfa84512dd28
+        // https://medium.freecodecamp.org/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d
+
+        // Primitive and non primitive data types in javascript
+        // https://medium.com/@junshengpierre/javascript-primitive-values-object-references-361cfc1cbfb0
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+        // https://codeburst.io/javascript-data-types-explained-347555cd2d4d
+
+        // ES6 functions, loops, conditions, operators, arrays
+        // https://www.tutorialspoint.com/es6/es6_functions.htm
+        // https://www.tutorialspoint.com/es6/es6_loops.htm
+        // https://www.tutorialspoint.com/es6/es6_operators.htm
+        // https://www.tutorialspoint.com/es6/es6_decision_making.htm
+        // https://www.tutorialspoint.com/es6/es6_arrays.htm
+
+        // JS async
+        // https://www.hongkiat.com/blog/synchronous-asynchronous-javascript/
+        // https://medium.freecodecamp.org/understanding-asynchronous-javascript-callbacks-through-household-chores-e3de9a1dbd04
+        // https://tech.io/playgrounds/347/javascript-promises-mastering-the-asynchronous/what-is-asynchronous-in-javascript
+
+        // console.log('Works')
+
+        // setTimeout(function () {
+        //     console.log(1)
+
+        //     setTimeout(function () {
+        //         setTimeout(function () {
+        //             console.log(4)
+        //         }, 100)
+        //         console.log(3)
+        //     }, 500)
+
+        // }, 2000)
+
+        // setTimeout(function () {
+        //     console.log(2)
+        // }, 2000)
+
+        // console.log("End")
+
+
+        // var userPromise = new Promise(function (resolve, reject) {
+        //     console.log('Data')
+
+        //     var user = "Ali"
+        //     if (user != null) {
+        //         resolve(user)
+        //     }
+        //     else {
+        //         reject("No user login")
+        //     }
+        // })
+
+
+        // userPromise.then(function (data) {
+        //     console.log(data)
+        // }, function (err) {
+        //     console.log(err)
+        // })
+
+
+        // var name = "Rehan is Teacher"
+        // name.encrypt()
+            
+        // r = a
+        // e = i
+        // h = e
+        // a = o
+        // n = u
+
+        // aieou
+
+
+        class User {
+            constructor(name){
+                this.name = name
+            }
+            sleeping(){
+                console.log(this.name + " sleeping")
+            }
+        }
+
+        var a = new User("Ali")
+        a.sleeping()
+
+
+        class Human{
+            constructor(name){
+                this.name = name   
+            }
+            sleeping(){
+                console.log(this.name + " sleeping")
+            }
+            eating(){
+                console.log(this.name + " eating")
+            }
+        }
+
+        class Teacher extends Human {
+            constructor(name){
+                super(name)
+            }
+            work(){
+                console.log(this.name + " working")
+            }
+            sleeping(){
+                console.log(this.name + " sleeping 1")
+            }
+        }
+        var t = new Teacher("Rehan")
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
