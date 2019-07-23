@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import store from './store';
+import {connect} from 'react-redux'
 
 
 class App extends React.Component {
@@ -11,6 +12,10 @@ class App extends React.Component {
       todos : [],
       counter : null
     }
+
+    setInterval(() => {
+      this.props.increment()
+    },1000)
 
     console.log(store)
     
@@ -48,20 +53,28 @@ class App extends React.Component {
   }
 }
 
-// const mapStateToProps = (state /*, ownProps*/) => {
-//   return {
-//     counter: state.counter
-//   }
-// }
+function increment () {
+  return { type: 'INCREMENT' }
+}
 
-// const mapDispatchToProps = { increment, decrement, reset }
+function decrement () {
+  return { type: 'DECREMENT' }
+}
 
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(App)
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    counter: state.counter
+  }
+}
 
-export default App;
+const mapDispatchToProps = { increment, decrement }
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)
+
+// export default App;
 
 // class Home extends React.Component{
 //   constructor(){

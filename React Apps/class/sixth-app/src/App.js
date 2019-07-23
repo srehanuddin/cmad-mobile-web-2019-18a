@@ -1,10 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+import Firebase from "firebase";
+import config from './config'
 
 class App extends React.Component{
   constructor(props){
     super(props);
+
+    Firebase.initializeApp(config);
     this.state = {
       value : "",
       allData : [],
@@ -18,6 +24,33 @@ class App extends React.Component{
     this.delete = this.delete.bind(this)
     this.edit = this.edit.bind(this)
     this.editChange = this.editChange.bind(this)
+
+    // var database = firebase.database();
+    // Firebase.database().ref('users/').set({
+    //   username: "Ali",
+    //   email: "abc",
+    //   profile_picture : "image"
+    // });
+
+    this.readFromFirebase()
+
+  }
+
+  writeInFirebase () {
+    console.log(this.state.allData, "data")
+    Firebase.database().ref('todos/').set({
+      todos : this.state.allData
+    });
+  }
+
+  readFromFirebase () {
+    Firebase.database().ref('/todos/').once('value').then((snapshot) => {
+      console.log(snapshot.val(), "value")
+      this.setState({
+        allData : snapshot.val().todos
+      })
+    });
+
   }
 
   onAdd(event){
@@ -40,7 +73,8 @@ class App extends React.Component{
     else {
       this.setState({
         allData : [...this.state.allData, this.state.value]
-      })
+      }, this.writeInFirebase)
+      // this.writeInFirebase()
       this.state.value = ""
     }
   }
@@ -49,7 +83,7 @@ class App extends React.Component{
     var deleteData = this.state.allData.splice(i, 1)
     this.setState({
       allData : this.state.allData
-    })
+    },this.writeInFirebase)
   }
 
   edit(i, data){
